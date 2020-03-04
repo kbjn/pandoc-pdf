@@ -15,6 +15,7 @@ RUN apt-get install -y \
 RUN apt-get install -y \
         haskell-platform
 RUN cabal update
+RUN cabal install cabal-install
 RUN cabal install pandoc
 RUN cabal install pandoc-citeproc
 RUN cabal install pandoc-crossref
